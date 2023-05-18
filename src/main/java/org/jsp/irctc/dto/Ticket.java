@@ -13,10 +13,10 @@ public class Ticket {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	Long id;
+
 	@ManyToOne
 	User user;
 
-	Long userId;
 	Long trainId;
 	String source;
 	String destination;
