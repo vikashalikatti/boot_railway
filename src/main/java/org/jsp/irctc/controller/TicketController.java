@@ -1,7 +1,5 @@
 package org.jsp.irctc.controller;
 
-package org.jsp.railway.controller;
-
 import java.util.List;
 
 import org.jsp.irctc.dto.Ticket;
@@ -37,6 +35,4 @@ public class TicketController {
 	public ResponseStructure<List<Ticket>> fetchAll(@RequestHeader("Authorization") String token) {
 		return ticketService.fetchAll(token);
 	}
-
-	// Add more methods as needed
 }

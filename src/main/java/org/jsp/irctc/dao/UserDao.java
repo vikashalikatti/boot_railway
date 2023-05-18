@@ -1,5 +1,7 @@
 package org.jsp.irctc.dao;
 
+import java.util.Optional;
+
 import org.jsp.irctc.dto.User;
 import org.jsp.irctc.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,4 +19,9 @@ public class UserDao {
 	public User findByUsername(String username) {
 		return repository.findByUsername(username).orElse(null);
 	}
+
+	public Optional<User> findById(Long id) {
+		return repository.findById(id);
+	}
+
 }

@@ -1,6 +1,6 @@
 package org.jsp.irctc.controller;
 
-import org.apache.catalina.realm.JNDIRealm.User;
+import org.jsp.irctc.dto.*;
 import org.jsp.irctc.helper.ResponseStructure;
 import org.jsp.irctc.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
